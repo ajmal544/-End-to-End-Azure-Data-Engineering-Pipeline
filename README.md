@@ -69,6 +69,4 @@ Country-wise table summary
 
 Map visualization of global spread
 
-📸 Sample Dashboard
-![Architecture Diagram](POWER BI graph.jpeg.pbix.png
-)
+![Architecture Diagram](POWER BI graph.jpeg.pbix.png)
