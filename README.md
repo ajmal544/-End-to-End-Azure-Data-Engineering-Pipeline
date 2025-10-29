@@ -21,13 +21,13 @@ Automation: Databricks Job / ADF pipeline schedules daily ETL runs
 
 🧱 Data Lake Layers
 ADLS/
-├── Raw/
-│   └── covid_raw.json
-├── Ingested/
-│   └── covid_ingested.parquet
-└── Presentation/
-    ├── country_summary.parquet
-    └── continent_summary.parquet
+    ├── Raw/
+│       └── covid_raw.json
+    ├── Ingested/
+│       └── covid_ingested.parquet
+    └── Presentation/
+        ├── country_summary.parquet
+        └── continent_summary.parquet
 
 🛠️ Tech Stack
 Layer	Technology	Description
