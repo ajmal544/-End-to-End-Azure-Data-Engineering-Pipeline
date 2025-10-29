@@ -21,8 +21,8 @@ The entire workflow can be automated using Databricks Jobs or Azure Data Factory
 
 
 
-🧱 Data Lake Layers
-ADLS/
+🧱 Data Lake Layers / (ADLS)
+
 #├── Raw/
      └── covid_raw.json
 
