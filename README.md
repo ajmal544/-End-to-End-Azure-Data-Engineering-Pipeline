@@ -1,7 +1,7 @@
 # -End-to-End-Azure-Data-Engineering-Pipeline
+
 🦠 COVID-19 Azure Data Engineering Pipeline
 🚀 End-to-End Data Engineering Project using Azure Databricks, ADLS, ADF, and Power BI
-
 This project demonstrates a fully automated data pipeline built on Microsoft Azure. It extracts global COVID-19 data from a public API, processes it using Databricks and PySpark, stores the data in Azure Data Lake Storage (ADLS), and visualizes insights using Power BI.
 
 🧩 Architecture Overview
@@ -18,49 +18,56 @@ Analyze: Power BI connects to the Presentation Layer for reporting
 
 Automation: Databricks Job / ADF pipeline schedules daily ETL runs
 
-📥 Data Flow
-1. Ingestion Layer (Raw Data)
+🧱 Data Lake Layers
+ADLS/
+├── Raw/
+│   └── covid_raw.json
+├── Ingested/
+│   └── covid_ingested.parquet
+└── Presentation/
+    ├── country_summary.parquet
+    └── continent_summary.parquet
 
-Fetch data from the API:
-https://disease.sh/v3/covid-19/countries
+🛠️ Tech Stack
+Layer	Technology	Description
+Source	Disease.sh API	Real-time COVID-19 country-wise data
+Storage	Azure Data Lake Storage Gen2	Multi-layered storage (Raw, Ingested, Presentation)
+Processing	Azure Databricks (PySpark)	ETL and transformation logic
+Orchestration	Azure Data Factory / Databricks Job	Automated daily runs
+Visualization	Power BI	KPI dashboard and global insights
 
-Save as JSON in the raw/ folder inside the ADLS container.
 
-2. Transformation Layer (Cleaned Data)
+⚙️ Automation
+Component	Purpose
+Databricks Jobs	Schedules notebooks daily / hourly
+ADF Pipelines	Triggers Databricks notebooks sequentially
+Power BI Scheduled Refresh	Keeps dashboard updated automatically
 
-Read raw data from ADLS
-
-Clean and transform it using PySpark (select important fields, calculate metrics)
-
-Store the cleaned data in the presentation/ folder.
-
-3. Visualization Layer
-
-Connect Power BI to the presentation layer (via Databricks or ADLS)
-
-Create dashboards showing:
-
-Total Cases, Deaths, Recoveries
-
-Death Rate vs Recovery Rate
-
-Cases by Continent & Country
-
-KPI Cards and Trend Charts
 
 📊 Power BI Dashboard
+🧠 COVID-19 Global Situation Report
 
-The Power BI report includes:
+KPIs Displayed:
 
-KPI Cards: Total Cases, Deaths, Recoveries
+🌍 Total Cases
 
-Line Chart: Death Rate vs Recovery Rate per Continent
+💀 Total Deaths
 
-Map Visualization: Cases by Country
+📉 Average Death Rate
 
-Table View: Detailed Country Stats
+💚 Total Recovered
 
-Filters: Continent, Country
+💪 Average Recovery Rate
+
+Visuals:
+
+Bar chart of total cases by continent
+
+Bar chart of average death rate by continent
+
+Country-wise table summary
+
+Map visualization of global spread
 
 📸 Sample Dashboard
-"C:\Users\ajmal\Downloads\POWER BI graph.jpeg (5).pbix"
+![Dashboard Screenshot]("C:\Users\ajmal\Downloads\POWER BI graph.jpeg (5).pbix")
