@@ -1,5 +1,6 @@
 # -End-to-End-Azure-Data-Engineering-Pipeline
 
+![Architecture Diagram](architecture.jpeg.png)
 🦠 COVID-19 Azure Data Engineering Pipeline
 🚀 End-to-End Data Engineering Project using Azure Databricks, ADLS, ADF, and Power BI
 This project demonstrates a fully automated data pipeline built on Microsoft Azure. It extracts global COVID-19 data from a public API, processes it using Databricks and PySpark, stores the data in Azure Data Lake Storage (ADLS), and visualizes insights using Power BI.
@@ -69,5 +70,5 @@ Country-wise table summary
 
 Map visualization of global spread
 
-![Architecture Diagram](POWER BI graph.jpeg.pbix.png)
-![Architecture Diagram](architecture.jpeg.png)
+![Architecture Diagram](POWER BI graph.jpeg.png)
+
