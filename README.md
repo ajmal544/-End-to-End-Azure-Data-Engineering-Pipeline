@@ -52,6 +52,9 @@ Power BI Scheduled Refresh	Keeps dashboard updated automatically
 
 
 📊 Power BI Dashboard
+
+![Dashboard](POWER_BI_graph.jpeg.png)
+
 🧠 COVID-19 Global Situation Report
 
 KPIs Displayed:
@@ -76,4 +79,4 @@ Country-wise table summary
 
 Map visualization of global spread
 
-![Dashboard](POWER_BI_graph.jpeg.png)
+
