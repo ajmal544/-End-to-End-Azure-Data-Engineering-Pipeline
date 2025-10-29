@@ -70,4 +70,4 @@ Country-wise table summary
 
 Map visualization of global spread
 
-![Dashboard Screenshot](POWER_BI_graph.jpeg.png)
+![Dashboard](POWER_BI_graph.jpeg.png)
