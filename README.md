@@ -9,25 +9,29 @@ This project demonstrates a fully automated data pipeline built on Microsoft Azu
 
 Workflow:
 
-Source: COVID-19 data from disease.sh API
+This Databricks project builds an end-to-end data pipeline that ingests global COVID-19 data from a public API and processes it through three layers:
 
-Ingest: Databricks notebook extracts raw JSON and stores it in ADLS Raw Layer
+Raw Layer: Extracts all countries’ data from the API and stores it in Azure Blob Storage.
 
-Transform: PySpark cleans and aggregates data into the Presentation Layer
+Ingested Layer: Cleans and filters data for selected countries.
 
-Analyze: Power BI connects to the Presentation Layer for reporting
+Presentation Layer: Calculates key KPIs (death rate, recovery rate, cases per million) and aggregates results by continent.
 
-Automation: Databricks Job / ADF pipeline schedules daily ETL runs
+The entire workflow can be automated using Databricks Jobs or Azure Data Factory for scheduled refreshes.
+
+
 
 🧱 Data Lake Layers
 ADLS/
-    ├── Raw/
-│       └── covid_raw.json
-    ├── Ingested/
-│       └── covid_ingested.parquet
-    └── Presentation/
-        ├── country_summary.parquet
-        └── continent_summary.parquet
+├── Raw/
+│      └── covid_raw.json
+├── Ingested/
+│      └── covid_ingested.parquet
+└── Presentation/
+    ├── country_summary.parquet
+    └── continent_summary.parquet
+
+
 
 🛠️ Tech Stack
 Layer	Technology	Description
