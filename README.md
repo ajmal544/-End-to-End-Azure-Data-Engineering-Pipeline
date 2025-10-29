@@ -23,11 +23,13 @@ The entire workflow can be automated using Databricks Jobs or Azure Data Factory
 
 🧱 Data Lake Layers
 ADLS/
-├── Raw/
-│      └── covid_raw.json
-├── Ingested/
-│      └── covid_ingested.parquet
-└── Presentation/
+#├── Raw/
+     └── covid_raw.json
+
+#├── Ingested/
+     └── covid_ingested.parquet
+
+#└── Presentation/
     ├── country_summary.parquet
     └── continent_summary.parquet
 
