@@ -70,6 +70,6 @@ Country-wise table summary
 Map visualization of global spread
 
 📸 Sample Dashboard
-<img width="1620" height="1080" alt="Power BI Dashboard" src="https://github.com/user-attachments/assets/78938ddf-1a98-4f4d-89bc-3f425baa9acb" />
+<img width="1620" height="1080" alt="Power BI Dashboard" src="[https://github.com/user-attachments/assets/78938ddf-1a98-4f4d-89bc-3f425baa9acb](https://github.com/ajmal544/-End-to-End-Azure-Data-Engineering-Pipeline/blob/main/POWER%20BI%20graph.jpeg.pbix.png)" />
 
 
